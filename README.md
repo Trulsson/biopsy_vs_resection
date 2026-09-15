@@ -54,23 +54,6 @@ Access to controlled human sequencing data is subject to the requirements of
 the relevant archive. Raw and processed molecular data are not duplicated in
 this code repository.
 
-The notebooks also refer to project-specific intermediate files, reference
-count matrices, Ensembl annotation mappings, and Hoshida classification files.
-These include:
-
-- `counts_080725.out`
-- `counts_with_class.out`
-- `counts_with_class_norm.out`
-- `diann_report_new.parquet`
-- `diann_phospho_report.phosphosites_90_v2.tsv`
-- Ensembl gene-symbol and biotype mapping files
-- Hoshida signature and GenePattern NearestTemplatePrediction result files
-
-File paths reflect the original analysis environment. Update them to match the
-local data layout before running the notebooks. Confirm that any clinical or
-sample-level metadata are permitted for public release before depositing a
-fork or derivative archive.
-
 ## Software
 
 The analysis was performed in Python using Jupyter notebooks. Key versioned
@@ -86,27 +69,7 @@ software reported in the manuscript includes:
 
 The notebooks also use pandas, NumPy, SciPy, statsmodels, patsy, matplotlib,
 seaborn, matplotlib-venn, pingouin, pyarrow, and tqdm. Consult the manuscript
-Methods and the stored notebook outputs for further version information. An
-exact environment lock file was not available when this repository was
-prepared.
-
-## Running the analysis
-
-1. Obtain the required data through the repositories and access procedures
-   listed above.
-2. Place the processed inputs and reference files in the expected locations,
-   or update the input paths near the beginning of each notebook.
-3. Create the `figures/` and `gct_files/` output directories where required.
-4. Open Jupyter from the intended working directory.
-5. Restart the kernel and run each notebook from top to bottom.
-6. Compare regenerated tables and figures with the archived notebook outputs
-   and the final manuscript figures.
-
-The first three notebooks can be run independently once their respective input
-files are available. The two reference-space notebooks additionally require the
-external reference count matrices; the tumor notebook also requires the
-Hoshida classification inputs. Some output filenames contain the execution
-date, so filenames may change without a change in the numerical results.
+Methods and the stored notebook outputs for further version information.
 
 ## Reproducibility notes
 
@@ -119,8 +82,7 @@ date, so filenames may change without a change in the numerical results.
   analysis.
 - Hoshida subtype assignments use GenePattern NearestTemplatePrediction with a
   Benjamini–Hochberg FDR threshold of 0.05.
-- Stored outputs are provided for reference, but a complete numerical rerun is
-  the definitive reproducibility check.
+- Stored outputs are provided for reference.
 
 ## Citation
 
