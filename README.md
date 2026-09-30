@@ -62,7 +62,7 @@ software reported in the manuscript includes:
 | Software | Version | Use |
 | --- | --- | --- |
 | PyDESeq2 | 0.5.0 | Paired RNA-seq differential expression |
-| scikit-learn | 1.7.2 | PCA and preprocessing |
+| scikit-learn | 1.7.1 | PCA and preprocessing |
 | GSEApy | 1.1.5 | Enrichr/MSigDB pathway enrichment |
 | InMoose | 0.9.1 | Non-imputed paired limma sensitivity analysis |
 | DIA-NN | 2.5.1 | Upstream proteomics and phosphoproteomics processing |
